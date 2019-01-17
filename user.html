@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2nd Handlebar</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="user.js"></script>
+    <script type="text/x-template" class="userTemplate">
+        {{#each users}}
+        <tr>
+            <td>{{username}}</td>
+            <td>{{firstName}}</td>
+            <td>{{lastName}}</td>
+            <td>{{email}}</td>
+          </tr>
+          {{/each}}
+        </script>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Email</th>
+        </tr>
+
+        <tbody class="userData">
+
+        </tbody>
+
+    </table>
+
+
+
+</body>
+
+</html>
